@@ -1,0 +1,2 @@
+#!/bin/bash
+ffmpeg -f alsa -i hw:1 -f x11grab -s 1920x1080 -r 30 -i :0.0+1366,0 -acodec flac -vcodec libx264 -preset ultrafast -y ~/sandbox/screencast.mkv
